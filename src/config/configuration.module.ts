@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
 import { ConfigModule } from "@nestjs/config";
-import { appConfig, natsConfig } from "./config";
+import { appConfig, natsConfig, postgresConfig } from "./config";
 
 @Module({
     imports: [
@@ -10,6 +10,7 @@ import { appConfig, natsConfig } from "./config";
             load: [
                 appConfig,
                 natsConfig,
+                postgresConfig,
             ],
         }),
     ],
