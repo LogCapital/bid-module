@@ -10,7 +10,7 @@ export const natsConfig = registerAs('nats', () => ({
     port: get('NATS_PORT').required().asInt(),
 }));
 
-export const postgresConfig = registerAs('posstgres', () => ({
+export const postgresConfig = registerAs('postgres', () => ({
     server: get('POSTGRES_SERVER').required().asString(),
     port: get('POSTGRES_PORT').required().asInt(),
     user: get('POSTGRES_USER').required().asString(),
