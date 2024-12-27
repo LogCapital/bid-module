@@ -14,6 +14,8 @@ export class UserInfo {
 
     @Column('text', {
         name: 'passport_series',
+        nullable: true,
+        default: true,
     })
     passportSeries: string;
 
@@ -34,6 +36,8 @@ export class UserInfo {
 
     @Column('text', {
         name: 'division_code',
+        nullable: true,
+        default: null,
     })
     divisionCode: string;
 
@@ -47,10 +51,15 @@ export class UserInfo {
 
     @Column('text', {
         name: 'current_account_number',
+        nullable: true,
+        default: null,
     })
     currentAccountNumber: string;
 
-    @Column('text')
+    @Column('text', {
+        nullable: true,
+        default: null,
+    })
     bank: string;
 
     @Column('text', {
@@ -63,10 +72,16 @@ export class UserInfo {
     })
     correspondentAccount: string;
 
-    @Column('text')
+    @Column('text', {
+        nullable: true,
+        default: null,
+    })
     inn: string;
 
-    @Column('text')
+    @Column('text', {
+        nullable: true,
+        default: null,
+    })
     ogrnip: string;
 
     @Column('text')
@@ -92,34 +107,55 @@ export class UserInfo {
 
     @Column('text', {
         name: 'korr_payees_account',
+        nullable: true,
+        default: null,
     })
     korrPayeesAccount: string;
 
     @Column('text', {
         name: 'payees_account',
+        nullable: true,
+        default: null,
     })
     payeesAccount: string;
 
     @Column('text', {
         name: 'correspondent_bank',
+        nullable: true,
+        default: null,
     })
     correspondentBank: string;
 
     @Column('text', {
         name: 'payees_bank',
+        nullable: true,
+        default: null,
     })
     payeesBank: string;
 
     @Column('text', {
         name: 'owners_name_surname',
+        nullable: true,
+        default: null,
     })
     ownersNameSurname: string;
 
-    @Column('text')
+    @Column('text', {
+        nullable: true,
+        default: null,
+    })
     snils: string;
+
+    @Column('timestamp', {
+        nullable: true,
+        default: null,
+    })
+    birthday: Date;
 
     @Column('text', {
         name: 'place_of_birth',
+        nullable: true,
+        default: null,
     })
     placeOfBirth: string;
 
