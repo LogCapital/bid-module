@@ -1,0 +1,5 @@
+export enum SIGNED_STATUS_CRM {
+    UNSIGNED = 'UNSIGNED',
+    SIGNED = 'SIGNED',
+    SIGNED_ECP = 'SIGNED_ECP',
+}
