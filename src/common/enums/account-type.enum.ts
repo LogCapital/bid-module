@@ -1,0 +1,5 @@
+export enum ACCOUNT_TYPE {
+  TRADER = 'TRADER',
+  ACCOUNTANT = 'ACCOUNTANT',
+  ROBOT = 'ROBOT',
+}
