@@ -1,6 +1,6 @@
-import { USER_INFO_TYPE } from "src/common/enums/user-info-type.enum";
 import { Column, Entity, OneToOne, PrimaryGeneratedColumn } from "typeorm";
 import { Bid } from "./bid.entity";
+import { USER_INFO_TYPE } from "src/common/enums/user-info-type.enum";
 
 @Entity({ name: 'user_info' })
 export class UserInfo {

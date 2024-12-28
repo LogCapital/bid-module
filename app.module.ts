@@ -6,6 +6,7 @@ import { ConfigurationModule } from 'src/config/configuration.module';
 import { Bid } from 'src/domain/typeorm/bid.entity';
 import { Contract } from 'src/domain/typeorm/contract.entity';
 import { UserInfo } from 'src/domain/typeorm/user-info.entity';
+import { MainModule } from './src/main/main.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { UserInfo } from 'src/domain/typeorm/user-info.entity';
         entities: [Bid, Contract, UserInfo],
       }),
     }),
+    MainModule,
   ],
   controllers: [],
   providers: [],

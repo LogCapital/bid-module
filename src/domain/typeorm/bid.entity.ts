@@ -8,12 +8,12 @@ import {
     PrimaryGeneratedColumn,
     UpdateDateColumn
 } from "typeorm";
-import { BID_STATUS } from "src/common/enums/bid-status.enum";
-import { BID_TYPE } from "src/common/enums/bid-type.enum";
-import { SIGNED_STATUS_CRM } from "src/common/enums/signed-status-crm.enum";
-import { SIGNED_STATUS_LK } from "src/common/enums/signed-status-lk.enum";
 import { UserInfo } from "./user-info.entity";
 import { Contract } from "./contract.entity";
+import { BID_TYPE } from "src/common/enums/bid-type.enum";
+import { BID_STATUS } from "src/common/enums/bid-status.enum";
+import { SIGNED_STATUS_LK } from "src/common/enums/signed-status-lk.enum";
+import { SIGNED_STATUS_CRM } from "src/common/enums/signed-status-crm.enum";
 
 @Entity()
 export class Bid {
