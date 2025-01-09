@@ -22,39 +22,57 @@ export class Bid {
 
     @Column('uuid', {
         name: 'user_id',
+        nullable: true,
+        default: null,
     })
     userId: string;
 
     @Column('uuid', {
         name: 'contract_id',
+        nullable: true,
+        default: null,
     })
     contractId: string;
 
     @Column('uuid', {
         name: 'user_info_id',
+        nullable: true,
+        default: null,
     })
     userInfoId: string;
 
     @Column('text', {
         name: 'bid_number',
         unique: true,
+        nullable: true,
+        default: null,
     })
     bidNumber: string;
 
-    @Column('text', {
+    @Column('date', {
         name: 'signed_at',
+        nullable: true,
+        default: null,
     })
-    signedAt: string;
+    signedAt: Date;
 
-    @Column('text', {
-        name: 'saccept_date',
+    @Column('date', {
+        name: 'accept_date',
+        nullable: true,
+        default: null,
     })
     acceptDate: string;
 
-    @Column('text')
+    @Column('text', {
+        nullable: true,
+        default: null,
+    })
     comment: string;
 
-    @Column('text')
+    @Column('text', {
+        nullable: true,
+        default: null,
+    })
     note: string;
 
     @Column('enum', {
