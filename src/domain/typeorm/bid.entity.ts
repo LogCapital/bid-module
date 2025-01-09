@@ -85,11 +85,6 @@ export class Bid {
     })
     signedStatusCrm: SIGNED_STATUS_CRM;
 
-    @Column('boolean', {
-        name: 'is_primary_requisities',
-    })
-    isPrimaryRequisities: boolean;
-
     @CreateDateColumn({
         name: 'created_at',
         type: 'timestamp',
