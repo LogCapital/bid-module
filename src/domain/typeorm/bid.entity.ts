@@ -58,28 +58,28 @@ export class Bid {
     note: string;
 
     @Column('enum', {
-        name: 'bid_type',
+        name: 'BID_TYPE',
         enumName: 'BID_TYPE',
         enum: BID_TYPE,
     })
     bidType: BID_TYPE;
 
     @Column('enum', {
-        name: 'bid_status',
+        name: 'BID_STATUS',
         enumName: 'BID_STATUS',
         enum: BID_STATUS,
     })
     bidStatus: BID_STATUS;
 
     @Column('enum', {
-        name: 'signed_status_lk',
+        name: 'SIGNED_STATUS_LK',
         enumName: 'SIGNED_STATUS_LK',
         enum: SIGNED_STATUS_LK,
     })
     signedStatusLk: SIGNED_STATUS_LK;
 
     @Column('enum', {
-        name: 'signed_status_crm',
+        name: 'SIGNED_STATUS_CRM',
         enumName: 'SIGNED_STATUS_CRM',
         enum: SIGNED_STATUS_CRM,
     })
