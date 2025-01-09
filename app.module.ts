@@ -19,7 +19,7 @@ import { UserInfo } from 'src/domain/typeorm/user-info.entity';
         password: config.password,
         database: config.database,
         synchronize: true,
-        migrationRun: true,
+        migrationsRun: true,
         requestTimeout: 30000,
         entities: [Bid, Contract, UserInfo],
       }),
