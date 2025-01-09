@@ -20,7 +20,7 @@ export class Contract {
     userId: string;
 
     @Column('enum', {
-        name: 'contract_status',
+        name: 'CONTRACT_STATUS',
         enumName: 'CONTRACT_STATUS',
         enum: CONTRACT_STATUS,
     })

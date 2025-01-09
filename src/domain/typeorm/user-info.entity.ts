@@ -94,7 +94,7 @@ export class UserInfo {
     phone: string
 
     @Column('enum', {
-        name: 'user_info_type',
+        name: 'USER_INFO_TYPE',
         enumName: 'USER_INFO_TYPE',
         enum: USER_INFO_TYPE
     })
