@@ -12,7 +12,7 @@ import { BID_TYPE } from 'src/common/enums/bid-type.enum';
 import { resolveObservable } from 'src/infrastructure/resolver.observable';
 
 @Injectable()
-export class MainService {
+export class BidService {
     constructor(
         @Inject(NATS_SERVICE)
         private readonly natsClient: ClientNats,
