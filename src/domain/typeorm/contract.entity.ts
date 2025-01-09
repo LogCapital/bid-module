@@ -6,8 +6,8 @@ import {
     PrimaryGeneratedColumn,
     UpdateDateColumn
 } from "typeorm";
-import { Bid } from "./bid.entity";
 import { CONTRACT_STATUS } from "src/common/enums/contract-status.enum";
+import { Bid } from "./bid.entity";
 
 @Entity()
 export class Contract {
